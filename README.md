@@ -12,3 +12,5 @@ addIntegerToEnd(): Adds an integer to the array.
 replaceOrRemoveAtIndex(): Replaces or removes a value.
 Error Handling
 The program handles file errors, index out-of-bounds exceptions, and array overflow.
+
+![image](https://github.com/user-attachments/assets/a59266cd-ae26-4473-b3f4-98d6fd3f90fc)
