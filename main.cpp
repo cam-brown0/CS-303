@@ -2,6 +2,44 @@
 
 using namespace std;
 
+#include "stack_operations.cpp"
+
+int main() {
+    // Step 1: Create a stack object
+    Stack myStack;
+
+    // Step 2: Check if the stack is empty
+    cout << "Is the stack empty? " << (myStack.isEmpty() ? "Yes" : "No") << endl;
+
+    // Step 3: Insert some integer values onto the stack
+    myStack.push(10);
+    myStack.push(20);
+    myStack.push(30);
+    myStack.push(40);
+
+    // Step 2 (again): Check if the stack is empty after inserting elements
+    cout << "Is the stack empty? " << (myStack.isEmpty() ? "Yes" : "No") << endl;
+
+    // Step 4: Remove an element from the stack
+    myStack.pop();
+
+    // Step 5: Find the top element of the stack
+    try {
+        cout << "Top of the stack: " << myStack.top() << endl;
+    } catch (const runtime_error& e) {
+        cout << e.what() << endl;
+    }
+
+    // Step 6: Find the average value of the stack elements
+    try {
+        cout << "Average value of stack elements: " << myStack.average() << endl;
+    } catch (const runtime_error& e) {
+        cout << e.what() << endl;
+    }
+
+    return 0;
+}
+
 // Constructor
 template <typename Item_Type>
 Link_List<Item_Type>::Link_List() : head(nullptr), tail(nullptr), num_items(0) {}
