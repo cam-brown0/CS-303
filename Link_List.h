@@ -1,5 +1,5 @@
-#ifndef ARRAY_OPERATIONS_H
-#define ARRAY_OPERATIONS_H
+#ifndef LINK_LIST_H
+#define LINK_LIST_H
 
 #include <iostream>
 #include <fstream>
