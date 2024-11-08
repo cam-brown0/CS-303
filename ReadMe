@@ -1,0 +1,44 @@
+Overview
+This program demonstrates the implementation of a generic queue data structure using a linked list in C++. The queue supports basic operations like push, pop, front, size, and empty, as well as a custom move_to_rear function that moves the front element to the rear. Additionally, the program includes a recursive linear search function to find the last occurrence of a target in a vector, and an insertion sort function for sorting elements in a vector.
+
+Files
+Queue.h: Header file that contains the declaration and implementation of the Queue class template, along with all necessary queue operations.
+linear_search.cpp: Contains a recursive linear search function to find the last occurrence of a target value in a vector.
+insertion_sort.h: Header file containing a template function for insertion sort.
+main.cpp: The driver program that demonstrates usage of the queue, recursive search, and insertion sort functions.
+Functionality
+Queue Data Structure (Queue.h)
+
+push(T value): Adds an element to the rear of the queue.
+pop(): Removes the element at the front of the queue.
+front(): Returns the element at the front of the queue without removing it.
+size(): Returns the number of elements in the queue.
+empty(): Checks if the queue is empty.
+move_to_rear(): Moves the front element to the rear of the queue.
+Recursive Linear Search (linear_search.cpp)
+
+linear_search_last: Finds the last occurrence of a target element in a vector using recursion.
+Insertion Sort (insertion_sort.h)
+
+insertion_sort: Sorts elements in a vector using the insertion sort algorithm.
+Instructions for Running the Program
+1. Compile the Program
+Use the following command to compile the program:
+
+bash
+Copy code
+g++ main.cpp -o queue_program
+2. Run the Program
+Once compiled, run the executable:
+
+bash
+Copy code
+./queue_program
+3. Expected Output
+The program will display:
+
+The initial contents of the queue.
+The queue contents after moving the front element to the rear once.
+The result of the last occurrence search in the vector.
+The sorted vector using insertion sort.
+
